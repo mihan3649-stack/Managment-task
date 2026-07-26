@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>Task Manager</title>
+<link rel="stylesheet" href="mian.css">
+</head>
+
+
+<body>
+<header>
+    <h1>Task Management</h1>
+</header>
+<div class="container">
+    <div class="head">
+        <input id="taskTitle" placeholder="name a task">
+        <select id="priority">
+        <option value="High">high</option>
+        <option value="Medium">medium</option>
+        <option value="Low">low</option>
+        </select>
+        <button onclick="addTask()" id="button">insert task</button>
+        <input id="tasksearch" placeholder="search a task">
+    </div>
+    
+    <main class="board">
+    <div class="column">
+    <h2> To Do</h2>
+    <div id="todo"class="tasks"ondragover="allowDrop(event)"ondrop="drop(event)"></div>
+    </div>
+    <div class="column">
+    <h2> In Progress</h2>
+    <div id="progress"class="tasks"ondragover="allowDrop(event)"ondrop="drop(event)"></div>
+    </div>
+    <div class="column">
+    <h2> Done</h2>
+    <div id="done"class="tasks"ondragover="allowDrop(event)"ondrop="drop(event)"></div>
+    </div>
+    </main>
+    </div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
