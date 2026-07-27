@@ -20,7 +20,9 @@
         <option value="Medium">medium</option>
         <option value="Low">low</option>
         </select>
-        <button onclick="addTask()" id="button">insert task</button>
+        <button id="insertBtn" onclick="addTask()">Insert Task</button>
+        <button id="updateBtn" onclick="addTask()" style="display:none;">Update Task</button>
+        <button id="cancelBtn" onclick="cancelEdit()" style="display:none;">Cancel</button>
         <input id="tasksearch" placeholder="search a task">
     </div>
     

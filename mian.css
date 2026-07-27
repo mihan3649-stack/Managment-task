@@ -50,7 +50,7 @@ header{
 }
 
 
-#button{
+#insertBtn,#cancelBtn,#updateBtn{
 
     height:40px;
     width:100px;
@@ -63,13 +63,22 @@ header{
 }
 
 
-#button:hover{
+#insertBtn:hover{
 
     color:white;
     background:#235a63;
 }
 
+#cancelBtn:hover{
 
+    color:white;
+    background:#235a63;
+}
+#updateBtn:hover{
+
+    color:white;
+    background:#235a63;
+}
 
 /* Board */
 
